@@ -1,5 +1,6 @@
 import React from 'react';
 import {Button, Grid} from "@mui/material";
+import {Link} from "react-router-dom";
 
 const MainPage = () => {
   return (
@@ -11,12 +12,19 @@ const MainPage = () => {
       spacing={2}
     >
       <Grid item>
-        <Button variant='contained' href='/create'>
+        <Button
+          component={Link}
+          to='/create'
+          variant='contained'>
           Create user
         </Button>
       </Grid>
       <Grid item>
-        <Button variant='contained' href='/all'>
+        <Button
+          component={Link}
+          to="/all"
+          variant="contained"
+          color="primary">
           All users
         </Button>
       </Grid>
