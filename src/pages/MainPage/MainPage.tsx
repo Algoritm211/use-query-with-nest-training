@@ -6,7 +6,6 @@ const MainPage = () => {
   return (
     <Grid
       container
-      sx={{padding: '45px 0'}}
       alignItems='center'
       flexDirection='column'
       spacing={2}
